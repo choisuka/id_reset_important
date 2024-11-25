@@ -1,6 +1,11 @@
-깃에 가서 repository를 만든다(예:이름을"story"
-바탕화면에서 같은 이름(story)의 폴더를 만든다
-그리고 깃배쉬를 열어서 다음을 실행
+깃에 가서 repository를 만든다(예:이름을"story")
+
+
+<깃 사용법>
+
+(1)
+ - 바탕화면에서 같은 이름(story)의 폴더를 만든다
+ - 깃배쉬를 열어서 다음을 실행
 
 1 echo "# coinproject" >> README.md
 2 git init
@@ -10,7 +15,15 @@
 6 git remote add origin https://github.com/choisuka/coinproject.git
 7 git push -u origin main
 
+(2)
+내컴퓨터에서 파일을 수정한 다음
+다시 폴더 안에서 깃배쉬를 열어서 
+1. git add .
+2. git commit -m "first commit"
+3. git push
 
+
+(3) 깃배쉬의 실제 화면 
 
 USER@DESKTOP-D3OT7N0 MINGW64 ~/Desktop/coinproject
 $ echo "# coinproject" >> README.md
@@ -21,18 +34,6 @@ $ echo 'babo' >> test.txt
 USER@DESKTOP-D3OT7N0 MINGW64 ~/Desktop/coinproject
 $ echo 'babo' >> test.txt
 
-
-1. 깃에서 프로젝트 생성
-2. 원하는 폴더에 위에 명령어 한줄씩 실행
-3. 1 readme.md라는 파일을 만들고 그 안에 #coinproject를 써라
-4. git init을 통해 .git 폴더가 생기고 깃을 세팅할 수 있도록 준비(숨긴 항목 표시를 해야 보임)
-5. git add README.md git add를 통해 바구니에 readme.md를 담는다.
-6. git commit -m "first commit" 커밋을 하는데 -m은 메세지라는 뜻. 즉 커밋메시지를 적는다. 커밋을 한다는 이야기는 바구니를 잠근다.,
-7. git branch -M main를 통해 바라보는 브런치를 main으로 한다.
-8. git remote add origin https://github.com/choisuka/coinproject.git를 통해 바구니의 위치를 알려준다. 주소를..
-9. git push로 올린다. 만약에 안되면 ? 10번으로./
-10. git remote set-url origin https://choisuka@github.com/choisuka/coinproject.git << 오류 해결
-11. 다시 9번 실행.
 
 USER@DESKTOP-D3OT7N0 MINGW64 ~/Desktop/coinproject/coinproject (main)
 $ git add .
@@ -55,3 +56,20 @@ To https://github.com/choisuka/coinproject.git
    bc3af55..8593316  main -> main
 
 USER@DESKTOP-D3OT7N0 MINGW64 ~/Desktop/coinproject/coinproject (main)
+
+
+
+
+(4) 선생님의 자세한 설명
+
+1. 깃에서 프로젝트 생성
+2. 원하는 폴더에 위에 명령어 한줄씩 실행
+3. 1 readme.md라는 파일을 만들고 그 안에 #coinproject를 써라
+4. git init을 통해 .git 폴더가 생기고 깃을 세팅할 수 있도록 준비(숨긴 항목 표시를 해야 보임)
+5. git add README.md git add를 통해 바구니에 readme.md를 담는다.
+6. git commit -m "first commit" 커밋을 하는데 -m은 메세지라는 뜻. 즉 커밋메시지를 적는다. 커밋을 한다는 이야기는 바구니를 잠근다.,
+7. git branch -M main를 통해 바라보는 브런치를 main으로 한다.
+8. git remote add origin https://github.com/choisuka/coinproject.git를 통해 바구니의 위치를 알려준다. 주소를..
+9. git push로 올린다. 만약에 안되면 ? 10번으로./
+10. git remote set-url origin https://choisuka@github.com/choisuka/coinproject.git << 오류 해결
+11. 다시 9번 실행.
